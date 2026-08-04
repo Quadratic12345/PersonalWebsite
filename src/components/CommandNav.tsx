@@ -34,7 +34,7 @@ export function CommandNav({ sections, onNavigate, heroImage }: CommandNavProps)
       <div className="hero__scrim" />
 
       <div className="hero__content">
-        <p className="hero__eyebrow">SK — full-stack developer</p>
+        <p className="hero__eyebrow">SK full-stack developer</p>
 
         <form className="command-line" onSubmit={handleSubmit}>
           <span className="command-line__prompt">&gt;</span>
