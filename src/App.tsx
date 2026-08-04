@@ -7,6 +7,13 @@ import type { SectionData, SectionId } from "./types";
 
 const HERO_IMAGE = "hero.jpg";
 
+sections.forEach((section) => {
+  if (section.image) {
+    const img = new Image();
+    img.src = section.image;
+  }
+});
+
 export default function App() {
   const [activeId, setActiveId] = useState<SectionId | null>(null);
 
