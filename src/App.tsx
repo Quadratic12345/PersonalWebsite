@@ -35,6 +35,7 @@ export default function App() {
     function handleKeyDown(e: KeyboardEvent) {
       if (e.key === "Escape") {
         goHome();
+        (document.activeElement as HTMLElement | null)?.blur();
       }
     }
 
