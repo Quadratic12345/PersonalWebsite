@@ -282,6 +282,20 @@ input {
   color: var(--text);
 }
 
+.prose-block {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  max-width: 52ch;
+  margin-bottom: 2.25rem;
+}
+
+.prose-block p {
+  color: var(--text);
+  line-height: 1.65;
+  margin: 0;
+}
+
 .skill-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));

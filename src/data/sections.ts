@@ -1,11 +1,27 @@
 import type { SectionData } from "../types";
 
 export const sections: SectionData[] = [
+   {
+    id: "about",
+    label: "about",
+    path: "~/about",
+    aliases: ["About","ABOUT","about", "who", "bio", "me"],
+    accent: "#F2D53C",
+    image: "/bg5.jpg",
+    heading: "Who's building this",
+    intro: "Hello I am Sankalp, trying to build things independently and shipping as I learn.",
+    paragraphs: [
+      "Started from an HTML/CSS/JS base and built up toward full-stack work one project at a time.",
+      "Currently focused on learning modern development patterns while shipping real, working software.",
+      "Interested in Tech and Football.",
+      "Feel free to contact me."
+    ],
+  },
   {
     id: "skills",
     label: "skills",
     path: "~/skills",
-    aliases: ["skills", "skill", "stack", "tech"],
+    aliases: ["Skills","SKILLS","skills", "skill", "stack", "tech"],
     accent: "#5EC8D8",
     image: "/bg1.jpg",
     heading: "What I build with",
@@ -34,7 +50,7 @@ export const sections: SectionData[] = [
     id: "projects",
     label: "projects",
     path: "~/projects",
-    aliases: ["projects", "project", "work", "portfolio"],
+    aliases: ["Projects","PROJECTS","projects", "project", "work", "portfolio"],
     accent: "#E8720C",
     image: "/bg2.jpg",
     heading: "Things I have shipped",
@@ -73,7 +89,7 @@ export const sections: SectionData[] = [
     id: "blogs",
     label: "blogs",
     path: "~/blogs",
-    aliases: ["blogs", "blog", "writing", "notes"],
+    aliases: ["Blogs","BLOGS","blogs", "blog", "writing", "notes"],
     accent: "#C9A6E8",
     image: "/bg3.jpg",
     heading: "Blogs here",
@@ -85,7 +101,7 @@ export const sections: SectionData[] = [
     id: "contact",
     label: "contact",
     path: "~/contact",
-    aliases: ["contact", "email", "reach", "hire", "connect"],
+    aliases: ["Contact","CONTACT","contact", "email", "reach", "hire", "connect"],
     accent: "#7FD858",
     image: "/bg4.jpg",
     heading: "Get in touch",

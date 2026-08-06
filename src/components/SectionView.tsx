@@ -25,6 +25,14 @@ export function SectionView({ section, onBack }: SectionViewProps) {
         <h1 className="section-view__heading">{section.heading}</h1>
         <p className="section-view__intro">{section.intro}</p>
 
+            {section.paragraphs && (
+              <div className="prose-block">
+                  {section.paragraphs.map((paragraph, i) => (
+                   <p key={i}>{paragraph}</p>
+             ))}
+         </div>
+          )}
+
         {section.skills && (
           <div className="skill-grid">
             {section.skills.map((group) => (

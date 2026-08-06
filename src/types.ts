@@ -1,4 +1,4 @@
-export type SectionId = "skills" | "projects" | "blogs" | "contact";
+export type SectionId = "about" | "skills" | "projects" | "blogs" | "contact";
 
 export interface ProjectEntry {
   name: string;
@@ -34,6 +34,7 @@ export interface SectionData {
   image: string;
   heading: string;
   intro: string;
+  paragraphs?: string[];
   skills?: SkillGroup[];
   projects?: ProjectEntry[];
   blogs?: BlogEntry[];
