@@ -17,9 +17,9 @@ export function SectionView({ section, onBack }: SectionViewProps) {
       />
 
       <div className="section-view__body">
-        <button className="back-link" onClick={onBack}>
-          &larr; back
-        </button>
+       <button className="back-link" onClick={onBack}>
+          &larr; back <span className="back-link__key"></span>
+      </button>
 
         <p className="section-view__path">{section.path}</p>
         <h1 className="section-view__heading">{section.heading}</h1>

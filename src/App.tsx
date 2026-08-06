@@ -1,9 +1,10 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";  
 import { Topbar } from "./components/Topbar";
 import { CommandNav } from "./components/CommandNav";
 import { SectionView } from "./components/SectionView";
 import { sections } from "./data/sections";
 import type { SectionData, SectionId } from "./types";
+
 
 const HERO_IMAGE = "hero.jpg";
 
@@ -28,6 +29,18 @@ export default function App() {
   function goHome() {
     setActiveId(null);
   }
+  useEffect(() => {
+    if (!activeId) return;
+
+    function handleKeyDown(e: KeyboardEvent) {
+      if (e.key === "Escape") {
+        goHome();
+      }
+    }
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [activeId]);
 
   return (
     <div className="app">
