@@ -29,13 +29,30 @@ export default function App() {
   function goHome() {
     setActiveId(null);
   }
+
+  function stepSection(direction: 1 | -1) {
+    setActiveId((current) => {
+      if (!current) return current;
+      const currentIndex = sections.findIndex((s) => s.id === current);
+      const nextIndex = (currentIndex + direction + sections.length) % sections.length;
+      return sections[nextIndex].id;
+    });
+  }
+  
   useEffect(() => {
     if (!activeId) return;
 
-    function handleKeyDown(e: KeyboardEvent) {
+   function handleKeyDown(e: KeyboardEvent) {
       if (e.key === "Escape") {
-        goHome();
-        (document.activeElement as HTMLElement | null)?.blur();
+         goHome();
+          (document.activeElement as HTMLElement | null)?.blur();
+          return;
+          }
+
+      if (e.key === "ArrowRight") {
+          stepSection(1);
+      } else if (e.key === "ArrowLeft") {
+         stepSection(-1);
       }
     }
 
