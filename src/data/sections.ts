@@ -95,6 +95,12 @@ export const sections: SectionData[] = [
     heading: "Blogs here",
     intro: "Blogs on some topics here",
     blogs: [
+       {
+        title: "The Craziness of Redis PubSub",
+        excerpt:
+          "Redis Pubsub is one of the best when it comes to distribute the data in a very low latency time. It is such because it works in the concept of pushing the data instead of pulling it, so what happens is that the broker distributes the data available in its cache immediately. Notification systems are very good examples of this, like if there are 10 users then if we send a notification using Redis PubSub they get the notification immediately without any delay, but if a new user joins after the data is shared then they do not receive the data as the PubSub does not store any data it distibutes them immediately and clears the cache. ",
+        date: "2026",
+      },
     ],
   },
   {
