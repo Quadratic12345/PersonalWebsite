@@ -87,8 +87,7 @@ export const sections: SectionData[] = [
         name: "Notification System",
         description: "A notification system backend where there are fast notifications.",
         stack: ["Convex", "Redis PubSub"],
-        github: "https://github.com/Quadratic12345/Saksham",
-        live: "https://sakshamnotes.vercel.app",
+        github: "https://github.com/Quadratic12345/NotificationSystem",
       },
 
     ],
