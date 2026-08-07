@@ -405,6 +405,25 @@ input {
   }
   .topbar {
     padding: 1rem;
+    flex-wrap: wrap;
+    row-gap: 0.75rem;
+  }
+  .topbar__path {
+    display: none;
+  }
+  .topbar__nav {
+    order: 3;
+    width: 100%;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+  .topbar__nav::-webkit-scrollbar {
+    display: none;
+  }
+  .nav-chip {
+    flex-shrink: 0;
   }
 }
 
