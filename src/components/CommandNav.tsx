@@ -166,9 +166,9 @@ export function CommandNav({ sections, onNavigate, heroImage }: CommandNavProps)
         <p className="hero__error" role="status">
           {error}
         </p>
-
-        <p className="hero__quote">&ldquo;{quote}&rdquo;</p>
       </div>
+
+      <p className="hero__quote">&ldquo;{quote}&rdquo;</p>
     </section>
   );
 }
