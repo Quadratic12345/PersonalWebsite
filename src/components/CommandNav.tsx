@@ -31,6 +31,9 @@ export function CommandNav({ sections, onNavigate, heroImage }: CommandNavProps)
   const [now, setNow] = useState(() => new Date());
   const [quote] = useState(() => quotes[Math.floor(Math.random() * quotes.length)]);
   const inputRef = useRef<HTMLInputElement>(null);
+  const separatorIndex = quote.lastIndexOf(" ~ ");
+  const quoteText = separatorIndex === -1 ? quote : quote.slice(0, separatorIndex);
+  const quoteAuthor = separatorIndex === -1 ? "" : quote.slice(separatorIndex + 3);
 
   useEffect(() => {
     const id = setInterval(() => setNow(new Date()), 1000);
@@ -168,7 +171,10 @@ export function CommandNav({ sections, onNavigate, heroImage }: CommandNavProps)
         </p>
       </div>
 
-      <p className="hero__quote">&ldquo;{quote}&rdquo;</p>
+      <p className="hero__quote">
+        <span className="hero__quote-text">&ldquo;{quoteText}&rdquo;</span>
+        {quoteAuthor && <span className="hero__quote-author"> ~ {quoteAuthor}</span>}
+      </p>
     </section>
   );
 }
