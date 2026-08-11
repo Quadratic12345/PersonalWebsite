@@ -96,7 +96,7 @@ export function SectionView({ section, onBack }: SectionViewProps) {
             {section.blogs.map((post) => (
               <article className="entry-card" key={post.title}>
                 <h2 className="entry-card__title">{post.title}</h2>
-                <p className="entry-card__desc">{post.excerpt}</p>
+                <p className="blog-excerpt">{post.excerpt}</p>
                 <span className="entry-date">{post.date}</span>
               </article>
             ))}
