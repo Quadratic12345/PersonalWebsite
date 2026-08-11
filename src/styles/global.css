@@ -540,6 +540,11 @@ input {
   .section-view--about .prose-block p {
     white-space: normal;
   }
+
+  .section-view--about .section-view__body,
+  .section-view--skills .section-view__body {
+    overflow-y: visible;
+  }
 }
 .contact-link__icon {
   width: 1.35rem;
