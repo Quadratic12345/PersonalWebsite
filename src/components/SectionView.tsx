@@ -8,9 +8,15 @@ interface SectionViewProps {
 export function SectionView({ section, onBack }: SectionViewProps) {
   return (
     <section
-  className={`section-view ${section.contactLinks ? "section-view--contact" : ""}`}
-  style={{ ["--section-accent" as string]: section.accent }}
->
+      className={`section-view ${
+        section.contactLinks
+          ? "section-view--contact"
+          : section.paragraphs
+          ? "section-view--about"
+          : ""
+      }`}
+      style={{ ["--section-accent" as string]: section.accent }}
+    >
       <div
         className="section-view__image"
         style={{ backgroundImage: `url(${section.image})` }}

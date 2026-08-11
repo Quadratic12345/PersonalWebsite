@@ -517,8 +517,27 @@ input {
   white-space: nowrap;
 }
 
+.section-view--about .section-view__intro {
+  max-width: none;
+  white-space: nowrap;
+}
+
+.section-view--about .prose-block {
+  max-width: none;
+}
+
+.section-view--about .prose-block p {
+  white-space: nowrap;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
 @media (max-width: 860px) {
   .section-view--contact .section-view__intro {
+    white-space: normal;
+  }
+
+  .section-view--about .section-view__intro,
+  .section-view--about .prose-block p {
     white-space: normal;
   }
 }
