@@ -372,7 +372,7 @@ input {
 
 .contact-link {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   gap: 0.75rem;
   color: var(--text);
   text-decoration: none;
@@ -540,4 +540,24 @@ input {
   .section-view--about .prose-block p {
     white-space: normal;
   }
+}
+.contact-link__icon {
+  width: 1.35rem;
+  height: 1.35rem;
+  flex-shrink: 0;
+  color: var(--section-accent, var(--signal));
+  transform: translateY(-1px);
+}
+
+
+.contact-link__value {
+  font-family: var(--sans);
+  font-size: 1.05rem;
+}
+
+.contact-link:hover .contact-link__icon {
+  color: var(--text);
+}
+.skill-group__items {
+  font-size: 1.1rem;
 }
