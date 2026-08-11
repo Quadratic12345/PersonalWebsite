@@ -512,3 +512,13 @@ input {
   line-height: 1.65; 
   font-size: 1.1rem; 
 }
+.section-view--contact .section-view__intro {
+  max-width: none;
+  white-space: nowrap;
+}
+
+@media (max-width: 860px) {
+  .section-view--contact .section-view__intro {
+    white-space: normal;
+  }
+}
