@@ -89,6 +89,14 @@ export const sections: SectionData[] = [
         stack: ["Convex", "Redis PubSub"],
         github: "https://github.com/Quadratic12345/NotificationSystem",
       },
+      {
+        name: "Valerius",
+        description:
+          "A digital wallet send money to friends using their wallet ID.",
+        stack: ["Next JS", "Drizzle","Better auth"],
+        github: "https://github.com/Quadratic12345/Valerius",
+        live:"https://valeriuswallet.vercel.app",
+      },
 
     ],
   },
