@@ -108,6 +108,12 @@ export const sections: SectionData[] = [
           "Redis Pubsub is one of the best when it comes to distribute the data in a very low latency time. It is such because it works in the concept of pushing the data instead of pulling it, so what happens is that the broker distributes the data available in its cache immediately. Notification systems are very good examples of this, like if there are 10 users then if we send a notification using Redis PubSub they get the notification immediately without any delay, but if a new user joins after the data is shared then they do not receive the data as the PubSub does not store any data it distibutes them immediately and clears the cache. ",
         date: "2026",
       },
+      {
+        title: "The usefullness of message brokers",
+        excerpt:
+          "Message brokers or queues are very useful to us in the way of sending messages in a low latency time, but a rather cool point about it is that it stores messages, it is done to reduce the work on the database as the message brokers work on delivering the messages which are multiple messages but the message broker does that and then after each message one by one is delivered we can delete the messages from the message broker otherwise it may lead to the user receiving multiple messages on the same thing every time the final message is delivered the database is updated. RabbitMQ is a very useful message broker. ",
+        date: "2026",
+      },
     ],
   },
   {
