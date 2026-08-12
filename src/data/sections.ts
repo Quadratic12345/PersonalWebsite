@@ -122,6 +122,12 @@ export const sections: SectionData[] = [
           "Message brokers or queues are very useful to us in the way of sending messages in a low latency time, but a rather cool point about it is that it stores messages, it is done to reduce the work on the database as the message brokers work on delivering the messages which are multiple messages but the message broker does that and then after each message one by one is delivered we can delete the messages from the message broker otherwise it may lead to the user receiving multiple messages on the same thing every time the final message is delivered the database is updated. RabbitMQ is a very useful message broker. ",
         date: "2026",
       },
+      {
+        title: "Now we know Kafka in another way",
+        excerpt:
+          "We know that message brokers or message queues are very useful to us for sending messages but what happens when the consumers are different types, at that time message streams work in favour of us they provide the accessibility to us for using or sending the messages to multiple consumers, as the consumers can go through the messages one by one but in case of message brokers the message goes to the consumers but in message streams the consumers can go through the messages and what makes it so interesting is that it can have partition but the issue is that the number of partitions is limited to the number of consumers. Kafka is a very popular message stream. ",
+        date: "2026",
+      },
     ],
   },
   {
