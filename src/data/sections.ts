@@ -144,6 +144,7 @@ export const sections: SectionData[] = [
       { label: "GitHub", value: "github.com/Quadratic12345", href: "https://github.com/Quadratic12345" },
       { label: "LinkedIn", value: "linkedin.com/in/Sankalp Kar", href: "https://www.linkedin.com/in/sankalp-kar-5b4961336?utm_source=share_via&utm_content=profile&utm_medium=member_android" },
       { label: "X", value: "x.com/Sankalpsomethin", href: "https://x.com/Sankalpsomethin" },
+      { label: "Medium", value: "medium.com/Sankalpsomethin", href: "https://medium.com/@programmercoding01234" },
     ],
   },
 ];
